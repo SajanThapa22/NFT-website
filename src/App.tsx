@@ -1,11 +1,12 @@
 import NavBar from "./sections/NavBar";
 import logo from "./assets/images/Logo.png";
+import NavBarSmall from "./sections/NavBarSmall";
 
 function App() {
   return (
-    <div className="bg-bg-clr h-dvh relative">
+    <div className="bg-bg-clr h-dvh relative flex ">
       <NavBar />
-      <p>fasdlfasd</p>
+      <div className="w-full">fasd</div>
     </div>
   );
 }

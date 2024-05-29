@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --purp: #6f4ff2;
+}
+
 .light {
   --bg-clr: #d6dbde;
   --txt-clr: #000;
