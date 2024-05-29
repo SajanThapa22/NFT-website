@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .light {
   --bg-clr: #d6dbde;
   --txt-clr: #000;
@@ -10,5 +14,5 @@
 .dark {
   --bg-clr: #131129;
   --txt-clr: #fff;
-  --bg-comg: #1d1932;
+  --bg-comp: #1d1932;
 }

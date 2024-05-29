@@ -6,6 +6,7 @@ export default {
       colors: {
         "txt-clr": "var(--txt-clr)",
         "bg-clr": "var(--bg-clr)",
+        "bg-comp": "var(--bg-comp)",
       },
     },
   },
