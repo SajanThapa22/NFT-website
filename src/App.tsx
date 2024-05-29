@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="bg-bg-clr h-dvh relative">
       <NavBar />
+      <p>fasdlfasd</p>
     </div>
   );
 }
