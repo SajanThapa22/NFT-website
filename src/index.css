@@ -8,10 +8,11 @@
 
 :root {
   --purp: #6f4ff2;
+  --txt-gray: #68676e;
 }
 
 .light {
-  --bg-clr: #d6dbde;
+  --bg-clr: #f2f2f2;
   --txt-clr: #000;
   --bg-comp: #ffffff;
 }

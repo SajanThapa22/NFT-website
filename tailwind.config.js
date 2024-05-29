@@ -8,6 +8,7 @@ export default {
         "bg-clr": "var(--bg-clr)",
         "bg-comp": "var(--bg-comp)",
         purp: "var(--purp)",
+        "txt-gray": "var(--txt-gray)",
       },
     },
   },

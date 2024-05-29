@@ -7,7 +7,6 @@ import Setting from "../assets/svgs/setting.svg?react";
 import Signout from "../assets/svgs/signout.svg?react";
 
 import logo from "../assets/images/Logo.png";
-import Icon from "../components/Icon";
 
 const icons = [
   { id: 1, icon: Dashboard },
@@ -22,7 +21,7 @@ const NavBar = () => {
   return (
     <div className="flex flex-col sticky left-0 gap-14 w-fit items-center pt-8 pb-20 bg-bg-comp h-dvh px-6 py-5">
       <div>
-        <img src={logo} alt="logo" />
+        <img className="w-8 aspect-square" src={logo} alt="logo" />
       </div>
       <div className="flex flex-col items-center w-fit gap-12">
         {icons.map((i) => (
