@@ -9,6 +9,7 @@ export default {
         "bg-comp": "var(--bg-comp)",
         purp: "var(--purp)",
         "txt-gray": "var(--txt-gray)",
+        laal: "var(--laal)",
       },
     },
   },
