@@ -27,7 +27,7 @@ const NavBar = () => {
         {icons.map((i) => (
           <i.icon
             key={i.id}
-            className="text-gray-400 hover:text-purp w-6 aspect-square"
+            className="text-gray-500 hover:text-purp w-6 aspect-square cursor-pointer"
           />
         ))}
       </div>

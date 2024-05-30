@@ -12,15 +12,15 @@
   --txt-gray: #68676e;
   --laal: #dc3546;
   --px-16: 16px;
-}
-
-.light {
   --bg-clr: #f2f2f2;
   --txt-clr: #000;
   --bg-comp: #ffffff;
 }
-.dark {
-  --bg-clr: #131129;
-  --txt-clr: #fff;
-  --bg-comp: #1d1932;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-clr: #131129;
+    --txt-clr: #fff;
+    --bg-comp: #1d1932;
+  }
 }

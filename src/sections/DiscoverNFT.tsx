@@ -5,7 +5,9 @@ import Button from "../components/Button";
 
 const DiscoverNFT = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap gap-4">
+      {/* first part */}
+
       <div
         style={{
           backgroundImage: `url(${bg})`,
@@ -30,6 +32,8 @@ const DiscoverNFT = () => {
           <Button text="Create" styles="bg-laal" />
         </div>
       </div>
+
+      {/* second part  */}
       <div className="flex-1 flex p-5 bg-bg-comp rounded-3xl gap-4">
         <div
           style={{
