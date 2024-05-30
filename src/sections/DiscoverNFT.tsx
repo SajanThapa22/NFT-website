@@ -1,14 +1,16 @@
-import bg from "..//assets/images/discover.png";
+import bg from "../assets/images/discover.png";
+import nft from "../assets/images/NFT.png";
+import avatar from "../assets/images/avatar2.png";
 import Button from "../components/Button";
 
 const DiscoverNFT = () => {
   return (
-    <div className="p-5 flex">
+    <div className="flex gap-4">
       <div
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        className="bg-no-repeat bg-center bg-cover rounded-"
+        className="p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-3xl overflow-hidden flex-1"
       >
         <div>
           <h1 className="text-2xl font-semibold text-white">
@@ -28,7 +30,22 @@ const DiscoverNFT = () => {
           <Button text="Create" styles="bg-laal" />
         </div>
       </div>
-      <div></div>
+      <div className="flex-1">
+        <div
+          style={{
+            backgroundImage: `url(${nft})`,
+          }}
+          className="w-full rounded-3xl overflow-hidden bg-no-repeat bg-center bg-cover"
+        ></div>
+
+        <div>
+          <div>
+            <img src={avatar} alt="" />
+            <p>John Abraham</p>
+            <div className="w-1.5 aspect-square rounded-full bg-green-500"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
