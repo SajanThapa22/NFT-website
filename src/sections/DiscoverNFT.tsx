@@ -5,15 +5,15 @@ import Button from "../components/Button";
 
 const DiscoverNFT = () => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-col xl:flex-row flex-wrap gap-4 min-h-fit">
       {/* first part */}
-
       <div
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        className="p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1"
+        className="p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
       >
+        <div className="h-full w-full bg-purp absolute opacity-30 top-0 left-0 z-0"></div>
         <div>
           <h1 className="text-2xl font-semibold text-white">
             Discover, Collect, Sell
@@ -23,26 +23,27 @@ const DiscoverNFT = () => {
           </h1>
         </div>
 
-        <p className="text-sm text-white mt-3 mb-5">
+        <p className="text-sm text-white mt-3 mb-5 ">
           Digital marketplace for crypto collectibles and non fungable tokens
         </p>
 
         <div className="flex gap-5">
-          <Button text="Explore" styles="bg-purp" />
-          <Button text="Create" styles="bg-laal" />
+          <Button text="Explore" styles="bg-purp z-30" />
+          <Button text="Create" styles="bg-laal z-30" />
         </div>
       </div>
 
       {/* second part  */}
-      <div className="flex-1 flex p-5 bg-bg-comp rounded-3xl gap-4">
-        <div
-          style={{
-            backgroundImage: `url(${nft})`,
-          }}
-          className="flex-1 rounded-2xl overflow-hidden bg-no-repeat bg-center bg-cover"
-        ></div>
+      <div className="flex-1 h-fit grid grid-rows-2 md:flex p-5 bg-bg-comp rounded-3xl gap-4">
+        <div className="flex-1 bg-no-repeat w-full h-full bg-center bg-cover">
+          <img
+            className="rounded-2xl object-cover w-full h-full min-w-20"
+            src={nft}
+            alt=""
+          />
+        </div>
 
-        <div className="flex-1 flex flex-col justify-between">
+        <div className="flex flex-1 flex-col justify-evenly">
           <div className="flex gap-3 items-center">
             <img src={avatar} alt="" />
             <p className="text-sm font-semibold text-txt-clr">John Abraham</p>

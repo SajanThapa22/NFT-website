@@ -26,11 +26,7 @@ const SearchandNotification = () => {
 
       <div className="flex gap-7 items-center">
         <div className="flex gap-5 items-center">
-          <div
-            onClick={handleClick}
-            onBlur={() => setIsClicked(false)}
-            className="relative"
-          >
+          <div onClick={handleClick} className="relative">
             <div>
               {mode === "dark" ? (
                 <Moon className="w-6 h-6 text-txt-clr" />
