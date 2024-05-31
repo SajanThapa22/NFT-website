@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="bg-bg-clr relative flex">
       {width > 840 ? <NavBar /> : <NavBarSmall />}
-
       <MainSection />
     </div>
   );

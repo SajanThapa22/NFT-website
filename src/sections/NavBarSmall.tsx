@@ -19,15 +19,14 @@ const icons = [
 
 const NavBarSmall = () => {
   return (
-    // <div className="flex fixed bottom-0 z-10 w-full items-center justify-evenly bg-bg-comp px-6 py-5">
-    //   {icons.map((i) => (
-    //     <i.icon
-    //       key={i.id}
-    //       className="text-gray-400 hover:text-purp w-6 aspect-square"
-    //     />
-    //   ))}
-    // </div>
-    <div></div>
+    <div className="flex fixed bottom-0 z-10 w-full items-center justify-evenly bg-bg-comp px-6 py-5">
+      {icons.map((i) => (
+        <i.icon
+          key={i.id}
+          className="text-gray-400 hover:text-purp w-6 aspect-square"
+        />
+      ))}
+    </div>
   );
 };
 

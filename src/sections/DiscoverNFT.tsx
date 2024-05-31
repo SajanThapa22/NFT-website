@@ -35,7 +35,7 @@ const DiscoverNFT = () => {
 
       {/* second part  */}
       <div className="flex-1 h-fit grid grid-rows-2 md:flex p-5 bg-bg-comp rounded-3xl gap-4">
-        <div className="flex-1 bg-no-repeat w-full h-full bg-center bg-cover">
+        <div className="flex-1 bg-no-repeat bg-center bg-cover">
           <img
             className="rounded-2xl object-cover w-full h-full min-w-20"
             src={nft}
