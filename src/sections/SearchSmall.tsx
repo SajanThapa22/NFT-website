@@ -4,6 +4,7 @@ import Notification from "../assets/svgs/notification.svg?react";
 
 import avatar from "../assets/images/avatar.png";
 import logo from "../assets/images/Logo.png";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 const SearchSmall = () => {
   return (
@@ -28,11 +29,11 @@ const SearchSmall = () => {
 
       <div className="flex gap-7 items-center">
         <div className="flex gap-5 items-center">
-          <Sun className="w-6 h-6 text-txt-clr" />
+          <ThemeSwitch />
           <Notification className="w-6 h-6 text-txt-clr" />
         </div>
-        <div>
-          <img src={avatar} alt="" />
+        <div className="min-h-6 min-w-6">
+          <img className="min-h-6 min-w-6" src={avatar} alt="" />
         </div>
       </div>
     </div>

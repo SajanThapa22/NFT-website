@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 import Sun from "../assets/svgs/sun.svg?react";
 import Moon from "../assets/svgs/moon.svg?react";
+import System from "../assets/svgs/system.svg?react";
+
+const modes = [
+  { text: "light", icon: Sun },
+  { text: "dark", icon: Moon },
+  { text: "system", icon: System },
+];
 
 const ThemeSwitch = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
+  const handleClick = () => setIsClicked(!isClicked);
+  const [selected, setSelected] = useState(false);
 
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
@@ -11,11 +20,6 @@ const ThemeSwitch = () => {
   const element = document.documentElement;
 
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-  const handleClick = () => setIsClicked(!isClicked);
-  const makeDark = () => setTheme("dark");
-  const makeLight = () => setTheme("light");
-  const makeDefault = () => setTheme("system");
 
   function onWindowMatch() {
     if (
@@ -60,27 +64,32 @@ const ThemeSwitch = () => {
     <div>
       <div onClick={handleClick} className="relative">
         <div>
-          {theme === "dark" ? (
-            <Moon className="w-6 h-6 text-txt-clr" />
-          ) : (
-            <Sun className="w-6 h-6 text-txt-clr" />
-          )}
+          {theme === "dark" && <Moon className="w-6 h-6 text-txt-clr" />}
+          {theme === "light" && <Sun className="w-6 h-6 text-txt-clr" />}
+          {theme === "system" && <System className="w-6 h-6 text-txt-clr" />}
         </div>
-        <div
-          className={`absolute bottom-0 translate-y-full text-nowrap text-sm ${
-            isClicked ? "w-full" : "w-0 overflow-hidden"
+        <ul
+          className={`absolute bottom-0 bg-gray-400 overflow-hidden z-40 rounded-xl right-1/2 translate-x-1/2 translate-y-36 text-nowrap text-sm ${
+            isClicked ? "h-fit" : "h-0 overflow-hidden"
           }`}
         >
-          <div onClick={makeLight} className="text-txt-clr cursor-pointer">
-            Light Mode
-          </div>
-          <div onClick={makeDark} className="text-txt-clr cursor-pointer">
-            Dark Mode
-          </div>
-          <div onClick={makeDefault} className="text-txt-clr cursor-pointer">
-            System
-          </div>
-        </div>
+          {modes.map((m) => (
+            <li
+              onClick={() => {
+                setTheme(m.text);
+                setSelected(true);
+              }}
+              className={`flex gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
+            >
+              <m.icon
+                className={`w-6 h-6 text-txt-clr ${
+                  selected && "text-blue-600"
+                }`}
+              />
+              <p className="text-txt-clr font-medium">{m.text}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
