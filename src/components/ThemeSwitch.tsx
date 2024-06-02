@@ -68,7 +68,7 @@ const ThemeSwitch = () => {
           {theme === "system" && <System className="w-6 h-6 text-txt-clr" />}
         </div>
         <ul
-          className={`absolute bottom-0 bg-gray-400 overflow-hidden z-40 rounded-xl right-1/2 translate-x-1/2 translate-y-36 text-nowrap text-sm ${
+          className={`absolute bottom-0 bg-bg-dd overflow-hidden z-40 rounded-xl right-1/2 translate-x-1/2 translate-y-36 text-nowrap text-sm ${
             isClicked ? "h-fit" : "h-0 overflow-hidden"
           }`}
         >
@@ -80,13 +80,13 @@ const ThemeSwitch = () => {
               className={`flex items-center gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
             >
               <m.icon
-                className={`w-6 h-6 text-txt-clr ${
-                  m.text === theme && "text-blue-500"
+                className={`w-6 h-6 ${
+                  m.text === theme ? "text-blue-400" : "text-txt-clr"
                 }`}
               />
               <p
-                className={`text-txt-clr font-medium ${
-                  m.text === theme && "text-blue-500"
+                className={`font-medium text-xl ${
+                  m.text === theme ? "text-blue-400" : "text-txt-clr"
                 }`}
               >
                 {m.text}

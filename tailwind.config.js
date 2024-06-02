@@ -12,6 +12,7 @@ export default {
         "txt-gray": "var(--txt-gray)",
         laal: "var(--laal)",
         light: "var(--light)",
+        "bg-dd": "var( --bg-dd)",
       },
       fontSize: {
         "f-16px": "var( --px-16)",

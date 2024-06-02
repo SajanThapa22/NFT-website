@@ -9,7 +9,7 @@ const MainSection = () => {
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return (
-    <div className="w-full min-h-fit flex flex-col gap-12 px-5 py-6 xl:px-16 xl:py-7">
+    <div className="w-full min-h-fit flex flex-col gap-12 px-5 py-6 xl:px-12 xl:py-7">
       {width > 840 ? <SearchandNotification /> : <SearchSmall />}
 
       <DiscoverNFT />

@@ -5,16 +5,16 @@ import Button from "../components/Button";
 
 const DiscoverNFT = () => {
   return (
-    <div className="flex flex-col xl:flex-row flex-wrap gap-4 min-h-fit">
+    <div className="flex flex-col xl:flex-row justify-between flex-wrap gap-4 min-h-fit">
       {/* first part */}
       <div
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        className="p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
+        className="flex flex-col justify-between p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
       >
-        <div className="h-full w-full bg-purp absolute opacity-30 top-0 left-0 z-0"></div>
-        <div>
+        <div className="h-full w-full bg-purp absolute opacity-50 top-0 left-0 z-0"></div>
+        <div className="z-10">
           <h1 className="text-2xl font-semibold text-white">
             Discover, Collect, Sell
           </h1>
@@ -34,16 +34,12 @@ const DiscoverNFT = () => {
       </div>
 
       {/* second part  */}
-      <div className="flex-1 h-fit grid grid-rows-2 md:flex p-5 bg-bg-comp rounded-3xl gap-4">
-        <div className="flex-1 bg-no-repeat bg-center bg-cover">
-          <img
-            className="rounded-2xl object-cover w-full h-full min-w-20"
-            src={nft}
-            alt=""
-          />
+      <div className="flex-1 h-fit grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-[2fr,3fr] lg:grid-rows-1 p-5 bg-bg-comp rounded-3xl gap-4">
+        <div className="flex-1 h-full rounded-3xl overflow-hidden bg-no-repeat bg-center bg-cover">
+          <img className="object-cover w-full h-full" src={nft} alt="" />
         </div>
 
-        <div className="flex flex-1 flex-col justify-evenly">
+        <div className="flex flex-1 flex-col gap-4">
           <div className="flex gap-3 items-center">
             <img src={avatar} alt="" />
             <p className="text-sm font-semibold text-txt-clr">John Abraham</p>
@@ -52,7 +48,7 @@ const DiscoverNFT = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-1 justify-between h-full">
             <div>
               <p className="text-lg text-txt-clr font-semibold">Birghten LQ</p>
             </div>

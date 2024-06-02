@@ -12,13 +12,13 @@ const SearchSmall = () => {
       <div className="flex items-center gap-5">
         <div>
           <img
-            className="w-11 aspect-square rounded-xl"
+            className="w-12 aspect-square rounded-xl"
             src={logo}
             alt="logo"
           />
         </div>
 
-        <div className="py-3 px-4 w-full items-center flex gap-3 bg-bg-comp rounded-xl">
+        <div className="py-2 px-4 w-full items-center flex gap-3 bg-bg-comp rounded-xl">
           <Search className="w-6 h-6 text-txt-clr" />
           <input
             placeholder="Search here"

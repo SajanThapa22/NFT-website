@@ -5,7 +5,11 @@ const BidCards = () => {
   return (
     <div className="flex flex-col p-5 gap-5 bg-bg-comp rounded-3xl">
       <div className="w-full rounded-2xl overflow-hidden">
-        <img className="w-full" src={nft} alt="" />
+        <img
+          className="w-full hover:scale-110 transition-all duration-300"
+          src={nft}
+          alt=""
+        />
       </div>
 
       <div className="grid gap-y-3">
@@ -26,7 +30,10 @@ const BidCards = () => {
           </div>
         </div>
       </div>
-      <Button text="Place a Bid" styles="bg-purp py-[10px]" />
+      <Button
+        text="Place a Bid"
+        styles="bg-purp py-[10px] hover:bg-[#3f2996]"
+      />
     </div>
   );
 };
