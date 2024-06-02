@@ -1,6 +1,6 @@
 import nft from "../assets/images/NFT.png";
 
-const Card = () => {
+const BidCards = () => {
   return (
     <div className="p-5 mt-14">
       <div className="w-full rounded-3xl overflow-hidden">
@@ -27,4 +27,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default BidCards;
