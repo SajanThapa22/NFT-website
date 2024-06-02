@@ -12,7 +12,6 @@ const modes = [
 const ThemeSwitch = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const handleClick = () => setIsClicked(!isClicked);
-  const [selected, setSelected] = useState(false);
 
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
@@ -77,16 +76,21 @@ const ThemeSwitch = () => {
             <li
               onClick={() => {
                 setTheme(m.text);
-                setSelected(true);
               }}
-              className={`flex gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
+              className={`flex items-center gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
             >
               <m.icon
                 className={`w-6 h-6 text-txt-clr ${
-                  selected && "text-blue-600"
+                  m.text === theme && "text-blue-500"
                 }`}
               />
-              <p className="text-txt-clr font-medium">{m.text}</p>
+              <p
+                className={`text-txt-clr font-medium ${
+                  m.text === theme && "text-blue-500"
+                }`}
+              >
+                {m.text}
+              </p>
             </li>
           ))}
         </ul>
