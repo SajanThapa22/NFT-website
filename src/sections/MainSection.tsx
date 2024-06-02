@@ -2,6 +2,7 @@ import { useState } from "react";
 import DiscoverNFT from "./DiscoverNFT";
 import SearchSmall from "./SearchSmall";
 import SearchandNotification from "./SearchandNotification";
+import TrendingBids from "./TrendingBids";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -12,6 +13,7 @@ const MainSection = () => {
       {width > 840 ? <SearchandNotification /> : <SearchSmall />}
 
       <DiscoverNFT />
+      <TrendingBids />
     </div>
   );
 };
