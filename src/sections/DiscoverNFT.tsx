@@ -11,7 +11,7 @@ const DiscoverNFT = () => {
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        className="flex flex-col justify-between p-5 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
+        className="flex flex-col justify-between p-6 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
       >
         <div className="h-full w-full bg-purp absolute opacity-50 top-0 left-0 z-0"></div>
         <div className="z-10">
