@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 
 interface Props {
   styles: string;
-  icon: string;
   amount: string;
   text: string;
   percent: string;
@@ -21,8 +20,8 @@ const MetricsCard = ({ styles, children, amount, text, percent }: Props) => {
       </div>
 
       <div className="flex flex-col justify-between">
-        <p className="text-txt-clr">{amount}</p>
-        <p className="text-txt-clr">{text}</p>
+        <p className="text-txt-clr text-[24px] font-semibold">{amount}</p>
+        <p className="text-[#68676E]">{text}</p>
       </div>
     </div>
   );

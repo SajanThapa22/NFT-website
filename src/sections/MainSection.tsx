@@ -3,8 +3,7 @@ import DiscoverNFT from "./DiscoverNFT";
 import SearchSmall from "./SearchSmall";
 import SearchandNotification from "./SearchandNotification";
 import TrendingBids from "./TrendingBids";
-import MetricsCard from "../components/MetricsCard";
-import Artwork from "../assets/svgs/Artwork.svg?react";
+import TrendingMetrics from "./TrendingMetrics";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -16,9 +15,8 @@ const MainSection = () => {
 
       <DiscoverNFT />
       <TrendingBids />
-      <MetricsCard styles="bg-purp" text="ArtWorks" amount="25K" percent="86%">
-        <Artwork />
-      </MetricsCard>
+      <TrendingMetrics />
+
       <div className="h-6"></div>
     </div>
   );
