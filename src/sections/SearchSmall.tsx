@@ -22,7 +22,7 @@ const SearchSmall = () => {
           <Search className="w-6 h-6 text-txt-clr" />
           <input
             placeholder="Search here"
-            className="focus:outline-none w-full bg-transparent text-lg h-fit text-txt-clr"
+            className="focus:outline-none w-full bg-transparent text-sm md:text-lg h-fit text-txt-clr"
           />
         </div>
       </div>
