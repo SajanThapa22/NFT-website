@@ -12,7 +12,9 @@ const User = ({ text }: Props) => {
       </div>
 
       <div className="flex flex-col justify-between">
-        <p className="text-txt-clr text-sm font-semibold capitalize">name</p>
+        <p className="text-txt-clr text-[16px] font-semibold capitalize">
+          papaya
+        </p>
         <p className="text-txt-clr text-sm">{text}</p>
       </div>
     </div>

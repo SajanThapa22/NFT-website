@@ -4,7 +4,7 @@ import SearchSmall from "./SearchSmall";
 import SearchandNotification from "./SearchandNotification";
 import TrendingBids from "./TrendingBids";
 import TrendingMetrics from "./TrendingMetrics";
-import RecentActivity from "../components/RecentActivity";
+import RAandTC from "../components/RAandTC";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -17,7 +17,7 @@ const MainSection = () => {
       <DiscoverNFT />
       <TrendingBids />
       <TrendingMetrics />
-      <RecentActivity />
+      <RAandTC />
 
       <div className="h-6"></div>
     </div>
