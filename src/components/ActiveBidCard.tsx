@@ -1,0 +1,45 @@
+import user from "../assets/images/avatar2.png";
+import cool from "../assets/images/cool.png";
+import Cross from "../assets/svgs/cross.svg?react";
+
+const ActiveBidCard = () => {
+  return (
+    <div className="flex items-center bg-bg-comp justify-between py-2 px-3 rounded-[18px]">
+      <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
+
+      <div className="flex gap-2 items-center">
+        <div className="w-[65px] h-[44px] rounded-[19px] overflow-hidden">
+          <img src={cool} className="w-full object-cover" alt="" />
+        </div>
+
+        <div className="flex flex-col justify-between">
+          <p className="text-txt-clr text-[16px] font-semibold capitalize">
+            cute cube cool
+          </p>
+          <p className="text-txt-clr text-sm capitalize">John Abhraham</p>
+        </div>
+      </div>
+
+      <div>
+        <p className="capitalize text-txt-clr">0.0025 eth</p>
+      </div>
+      <div>
+        <p className="capitalize text-txt-clr">0.0025 eth</p>
+      </div>
+      <div className="flex items-center gap-[10px]">
+        <img className="w-11 aspect-square rounded-full" src={user} alt="" />
+        <p className="capitalize text-txt-clr">0.0025 eth</p>
+      </div>
+
+      <div>
+        <p className="capitalize text-txt-clr">2 Hours 1 min 30s</p>
+      </div>
+
+      <div>
+        <Cross className="text-txt-clr w-[16px] h-[16px]" />
+      </div>
+    </div>
+  );
+};
+
+export default ActiveBidCard;
