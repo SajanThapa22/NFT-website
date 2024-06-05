@@ -6,7 +6,7 @@ interface Props {
 
 const User = ({ text }: Props) => {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 items-center">
       <div className="w-10 aspect-square rounded-full overflow-hidden">
         <img src={user} className="w-full" alt="" />
       </div>
