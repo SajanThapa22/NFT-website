@@ -4,7 +4,7 @@ import Cross from "../assets/svgs/cross.svg?react";
 
 const ActiveBidCard = () => {
   return (
-    <div className="flex items-center bg-bg-comp justify-between py-2 px-3 rounded-[18px]">
+    <div className="flex items-center bg-bg-comp justify-between py-2 pr-7 pl-3 rounded-[18px]">
       <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
 
       <div className="flex gap-2 items-center">
@@ -12,7 +12,7 @@ const ActiveBidCard = () => {
           <img src={cool} className="w-full object-cover" alt="" />
         </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col gap-1 leading-none">
           <p className="text-txt-clr text-[16px] font-semibold capitalize">
             cute cube cool
           </p>
@@ -21,18 +21,18 @@ const ActiveBidCard = () => {
       </div>
 
       <div>
-        <p className="capitalize text-txt-clr">0.0025 eth</p>
+        <p className="uppercase text-txt-clr text-sm">0.0025 eth</p>
       </div>
       <div>
-        <p className="capitalize text-txt-clr">0.0025 eth</p>
+        <p className="uppercase text-txt-clr text-sm">0.0025 eth</p>
       </div>
       <div className="flex items-center gap-[10px]">
         <img className="w-11 aspect-square rounded-full" src={user} alt="" />
-        <p className="capitalize text-txt-clr">0.0025 eth</p>
+        <p className="uppercase text-txt-clr text-sm">0.0025 eth</p>
       </div>
 
       <div>
-        <p className="capitalize text-txt-clr">2 Hours 1 min 30s</p>
+        <p className="capitalize text-txt-clr text-sm">2 Hours 1 min 30s</p>
       </div>
 
       <div>

@@ -6,6 +6,7 @@ import TrendingBids from "./TrendingBids";
 import TrendingMetrics from "./TrendingMetrics";
 import RAandTC from "../components/RAandTC";
 import ActiveBidCard from "../components/ActiveBidCard";
+import ActiveBids from "./ActiveBids";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -19,7 +20,7 @@ const MainSection = () => {
       <TrendingBids />
       <TrendingMetrics />
       <RAandTC />
-      <ActiveBidCard />
+      <ActiveBids />
 
       <div className="h-6"></div>
     </div>
