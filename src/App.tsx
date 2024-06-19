@@ -11,6 +11,7 @@ function App() {
     <div className="bg-bg-clr relative flex">
       {width > 840 ? <NavBar /> : <NavBarSmall />}
       <MainSection />
+      <div className="h-4"></div>
     </div>
   );
 }

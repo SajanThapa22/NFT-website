@@ -54,6 +54,9 @@ const ActiveBids = () => {
         <ActiveBidCard />
         <ActiveBidCard />
         <ActiveBidCard />
+        <ActiveBidCard />
+        <ActiveBidCard />
+        <ActiveBidCard />
       </div>
     </div>
   );
