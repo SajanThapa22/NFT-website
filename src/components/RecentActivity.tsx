@@ -1,4 +1,3 @@
-import React from "react";
 import RecentActivityCard from "./RecentActivityCard";
 
 const RecentActivity = () => {
@@ -11,7 +10,6 @@ const RecentActivity = () => {
         <p className="mb-5 text-[14px] text-purp">See more</p>
       </div>
       <div className="flex flex-col gap-4">
-        <RecentActivityCard />
         <RecentActivityCard />
         <RecentActivityCard />
         <RecentActivityCard />
