@@ -13,6 +13,9 @@ const TopCreators = () => {
         <TopCreaterCard />
         <TopCreaterCard />
         <TopCreaterCard />
+        <TopCreaterCard />
+        <TopCreaterCard />
+        <TopCreaterCard />
       </div>
     </div>
   );
