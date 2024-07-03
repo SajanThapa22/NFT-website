@@ -5,7 +5,6 @@ import SearchandNotification from "./SearchandNotification";
 import TrendingBids from "./TrendingBids";
 import TrendingMetrics from "./TrendingMetrics";
 import RAandTC from "../components/RAandTC";
-import ActiveBidCard from "../components/ActiveBidCard";
 import ActiveBids from "./ActiveBids";
 
 const MainSection = () => {
