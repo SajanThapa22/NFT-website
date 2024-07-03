@@ -1,12 +1,9 @@
-import React from "react";
-
 import Dashboard from "../assets/svgs/dashboard.svg?react";
 import Heart from "../assets/svgs/heart.svg?react";
 import Bid from "../assets/svgs/bid.svg?react";
 import Collection from "../assets/svgs/collection.svg?react";
 import Profile from "../assets/svgs/profile.svg?react";
 import Setting from "../assets/svgs/setting.svg?react";
-import Signout from "../assets/svgs/setting.svg?react";
 
 const icons = [
   { id: 1, icon: Dashboard },
