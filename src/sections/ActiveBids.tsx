@@ -1,6 +1,6 @@
-import React from "react";
 import Button from "../components/Button";
 import ActiveBidCard from "../components/ActiveBidCard";
+import Cross from "../assets/svgs/cross.svg?react";
 
 const ActiveBids = () => {
   return (
@@ -12,7 +12,7 @@ const ActiveBids = () => {
         <Button text="Place a Bid" styles="bg-purp text-white" />
       </div>
 
-      <div className="grid grid-cols-7 justify-between items-center border-b border-purp py-3 pr-7 pl-3">
+      <div className="grid grid-cols-[auto,auto,auto,auto,auto,auto,auto] justify-between items-center border-b border-purp py-3 px-7">
         <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
 
         <div>
@@ -55,6 +55,36 @@ const ActiveBids = () => {
         <ActiveBidCard />
         <ActiveBidCard />
       </div>
+
+      {/* <table className="text-txt-clr">
+        <tr className="text-left">
+          <th className="pl-2">
+            <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
+          </th>
+          <th>item list</th>
+          <th>item list</th>
+          <th>item list</th>
+          <th>item list</th>
+          <th>item list</th>
+          <th className="flex justify-center">Action</th>
+        </tr>
+
+        <tr className="bg-bg-comp p-10">
+          <td className="bg-bg-comp py-2 pl-2 rounded-l-[18px]">
+            <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
+          </td>
+          <td className="bg-bg-comp py-2">sajan thapa</td>
+          <td className="bg-bg-comp py-2">sajan thapa</td>
+          <td className="bg-bg-comp py-2">sajan thapa</td>
+          <td className="bg-bg-comp py-2">sajan thapa</td>
+          <td className="bg-bg-comp py-2">sajan thapa</td>
+          <td className="bg-bg-comp py-2 rounded-r-[18px]">
+            <div className="flex justify-center">
+              <Cross className="text-txt-clr w-[16px] h-[16px]" />
+            </div>
+          </td>
+        </tr>
+      </table> */}
     </div>
   );
 };

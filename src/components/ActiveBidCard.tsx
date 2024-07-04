@@ -4,7 +4,7 @@ import Cross from "../assets/svgs/cross.svg?react";
 
 const ActiveBidCard = () => {
   return (
-    <div className="flex items-center bg-bg-comp justify-between py-2 pr-7 pl-3 rounded-[18px]">
+    <div className="grid grid-cols-[auto,auto,auto,auto,auto,auto,auto] gap-[40px] items-center bg-bg-comp py-2 px-7 rounded-[18px]">
       <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
 
       <div className="flex gap-2 items-center">
@@ -12,7 +12,7 @@ const ActiveBidCard = () => {
           <img src={cool} className="w-full object-cover" alt="" />
         </div>
 
-        <div className="flex flex-col gap-1 leading-none">
+        <div className="flex flex-col gap-1 leading-none justify-self-start">
           <p className="text-txt-clr text-[16px] font-semibold capitalize">
             cute cube cool
           </p>
@@ -35,7 +35,7 @@ const ActiveBidCard = () => {
         <p className="capitalize text-txt-clr text-sm">2 Hours 1 min 30s</p>
       </div>
 
-      <div>
+      <div className="justify-self-end">
         <Cross className="text-txt-clr w-[16px] h-[16px]" />
       </div>
     </div>
