@@ -4,7 +4,7 @@ import Cross from "../assets/svgs/cross.svg?react";
 
 const ActiveBidCard = () => {
   return (
-    <div className="grid grid-cols-[1fr,4fr,2fr,2fr,3fr,2fr,1fr] gap-[40px] items-center bg-bg-comp py-2 pl-7 rounded-[18px]">
+    <div className="grid grid-cols-[1fr,4fr,2fr,2fr,3fr,2fr,1fr] gap-x-10 items-center bg-bg-comp py-2 px-3 rounded-[18px]">
       <div className="rounded-[2px] w-3 h-3 border border-[#A5A5A5]"></div>
 
       <div className="flex gap-2 items-center">
