@@ -1,0 +1,19 @@
+#active-bids-list {
+  overflow-x: auto;
+  padding-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 20px;
+}
