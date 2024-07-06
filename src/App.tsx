@@ -12,6 +12,9 @@ function App() {
       {width > 840 ? <NavBar /> : <NavBarSmall />}
       <MainSection />
     </div>
+    // <div className="w-full h-dvh bg-red-700 overflow-x-scroll">
+    //   <div className="h-96 min-w-[1600px] bg-blue-400">adsfsdfasdf</div>
+    // </div>
   );
 }
 
