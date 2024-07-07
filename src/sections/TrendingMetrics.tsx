@@ -23,7 +23,7 @@ const TrendingMetrics = () => {
           <MetricsCard
             styles="bg-[#DC3546]"
             text="ArtWorks"
-            amount="89"
+            amount="89K"
             percent="86%"
           >
             <Artwork />

@@ -4,7 +4,7 @@ interface Props {
   styles: string;
   amount: string;
   text: string;
-  percent: string;
+  percent?: string;
   children: ReactNode;
 }
 

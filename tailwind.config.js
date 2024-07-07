@@ -13,6 +13,7 @@ export default {
         laal: "var(--laal)",
         light: "var(--light)",
         "bg-dd": "var( --bg-dd)",
+        hariyo: "var(--hariyo)",
       },
       fontSize: {
         "f-16px": "var( --px-16)",

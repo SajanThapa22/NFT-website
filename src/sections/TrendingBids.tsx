@@ -24,10 +24,6 @@ const TrendingBids = () => {
         <BidCards />
         <BidCards />
         <BidCards />
-        <BidCards />
-        <BidCards />
-        <BidCards />
-        <BidCards />
       </div>
     </div>
   );
