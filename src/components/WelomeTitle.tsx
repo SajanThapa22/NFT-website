@@ -7,7 +7,7 @@ interface Props {
 
 const WelomeTitle = ({ pageTitle, titleBelow }: Props) => {
   return (
-    <div className="capitalize text-txt-clr mb-10">
+    <div className="capitalize text-txt-clr mt-[50px] mb-10">
       <p className="text-[24px] font-semibold mb-[5px] 2xl:mb-[10px]">
         {pageTitle}
       </p>
