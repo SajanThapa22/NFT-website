@@ -1,7 +1,14 @@
-import React from "react";
+interface Props {
+  top?: string;
+  bottom?: string;
+}
 
-const Seperator = () => {
-  return <div className="w-full"></div>;
+const Seperator = ({ top, bottom }: Props) => {
+  return (
+    <div
+      className={`w-full h-[2px] bg-[#d6dbde] mb-[${bottom}] mt-[${top}]`}
+    ></div>
+  );
 };
 
 export default Seperator;

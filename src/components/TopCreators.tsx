@@ -1,4 +1,4 @@
-import TopCreaterCard from "./TopCreaterCard";
+import CreatorCard from "./CreatorCard";
 
 const TopCreators = () => {
   return (
@@ -7,12 +7,12 @@ const TopCreators = () => {
         top creators
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <TopCreaterCard />
-        <TopCreaterCard />
-        <TopCreaterCard />
-        <TopCreaterCard />
-        <TopCreaterCard />
-        <TopCreaterCard />
+        <CreatorCard text="follow" />
+        <CreatorCard text="follow" />
+        <CreatorCard text="follow" />
+        <CreatorCard text="follow" />
+        <CreatorCard text="follow" />
+        <CreatorCard text="follow" />
       </div>
     </div>
   );

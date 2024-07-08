@@ -8,6 +8,7 @@ import RAandTC from "../components/RAandTC";
 import ActiveBids from "../sections/ActiveBids";
 import Bids from "./Bids";
 import SavedItems from "./SavedItems";
+import Profile from "./Profile";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -24,6 +25,7 @@ const MainSection = () => {
       <ActiveBids />
       <Bids />
       <SavedItems />
+      <Profile />
 
       <div className="h-6"></div>
     </div>
