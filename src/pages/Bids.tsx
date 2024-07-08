@@ -1,7 +1,7 @@
 import MetricsCard from "../components/MetricsCard";
 import WelomeTitle from "../components/WelomeTitle";
 import Artwork from "../assets/svgs/Artwork.svg?react";
-import ActiveBids from "./ActiveBids";
+import ActiveBids from "../sections/ActiveBids";
 
 const Bids = () => {
   return (

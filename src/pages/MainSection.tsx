@@ -1,12 +1,13 @@
 import { useState } from "react";
-import DiscoverNFT from "./DiscoverNFT";
-import SearchSmall from "./SearchSmall";
-import SearchandNotification from "./SearchandNotification";
-import TrendingBids from "./TrendingBids";
-import TrendingMetrics from "./TrendingMetrics";
+import DiscoverNFT from "../sections/DiscoverNFT";
+import SearchSmall from "../sections/SearchSmall";
+import SearchandNotification from "../sections/SearchandNotification";
+import TrendingBids from "../sections/TrendingBids";
+import TrendingMetrics from "../sections/TrendingMetrics";
 import RAandTC from "../components/RAandTC";
-import ActiveBids from "./ActiveBids";
+import ActiveBids from "../sections/ActiveBids";
 import Bids from "./Bids";
+import SavedItems from "./SavedItems";
 
 const MainSection = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -22,6 +23,7 @@ const MainSection = () => {
       <RAandTC />
       <ActiveBids />
       <Bids />
+      <SavedItems />
 
       <div className="h-6"></div>
     </div>

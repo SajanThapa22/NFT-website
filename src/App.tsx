@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MainSection from "./sections/MainSection";
+import MainSection from "./pages/MainSection";
 import NavBar from "./sections/NavBar";
 import NavBarSmall from "./sections/NavBarSmall";
 
