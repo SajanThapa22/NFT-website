@@ -29,7 +29,7 @@ const Profile = () => {
 
           <div className="flex gap-[10px] items-center">
             <div className="rounded-full bg-hariyo flex items-center justify-center size-[30px]">
-              <Tick className="text-txt-clr w-[14px] h-[16px]" />
+              <Tick className="text-white w-[14px] h-[16px]" />
             </div>
             <p className="text-purp text-sm">Verify account</p>
           </div>
@@ -37,8 +37,8 @@ const Profile = () => {
           <Seperator />
 
           <div className="flex gap-[10px] items-center">
-            <div className="rounded-full bg-purp flex items-center justify-center size-[30px] p-2">
-              <Lock className="text-txt-clr" />
+            <div className="rounded-full bg-purp flex items-center justify-center size-[30px]">
+              <Lock className="text-white" />
             </div>
             <p className="text-purp text-sm">
               Two-factor Authentication ( 2FA )
@@ -53,19 +53,19 @@ const Profile = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-5 gap-x-[30px]">
             <CreatorCard
-              styles="border-none bg-[#dc2626] text-[#fff] font-semibold"
+              styles="border-none bg-[#dc2626] text-white font-semibold"
               text="unfollow"
             />
             <CreatorCard
-              styles="border-none bg-[#dc2626] text-[#fff] font-semibold"
+              styles="border-none bg-[#dc2626] text-white font-semibold"
               text="unfollow"
             />
             <CreatorCard
-              styles="border-none bg-[#dc2626] text-[#fff] font-semibold"
+              styles="border-none bg-[#dc2626] text-white font-semibold"
               text="unfollow"
             />
             <CreatorCard
-              styles="border-none bg-[#dc2626] text-[#fff] font-semibold"
+              styles="border-none bg-[#dc2626] text-white font-semibold"
               text="unfollow"
             />
           </div>
