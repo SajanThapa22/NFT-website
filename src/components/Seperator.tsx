@@ -1,13 +1,6 @@
-interface Props {
-  top?: string;
-  bottom?: string;
-}
-
-const Seperator = ({ top, bottom }: Props) => {
+const Seperator = () => {
   return (
-    <div
-      className={`w-full h-[2px] bg-[#d6dbde] mb-[${bottom}] mt-[${top}]`}
-    ></div>
+    <div className={`w-full h-[1px] bg-[#d6dbde] mt-[15px] mb-[15px]`}></div>
   );
 };
 
