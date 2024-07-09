@@ -1,6 +1,6 @@
 #active-bids-list {
   overflow-x: auto;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding-bottom: 50px;
   width: 100%;
 }

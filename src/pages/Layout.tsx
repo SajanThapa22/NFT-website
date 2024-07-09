@@ -12,12 +12,11 @@ const Layout = () => {
   return (
     <div className="flex w-full z-100 relative">
       {width > 840 ? <NavBar /> : <NavBarSmall />}
-      <div className="px-5 pt-[20px] xl:px-12 bg-bg-clr w-full">
+      <div className="px-5 pt-[20px] xl:px-12 pb-8 bg-bg-clr w-full">
         <div className="sticky lg:static top-0 z-[40] pt-[10px] pb-[10px] bg-bg-clr lg:pb-0">
           {width > 840 ? <SearchandNotification /> : <SearchSmall />}
         </div>
         <Outlet />
-        {width < 840 ? <div className="h-[70px]"></div> : ""}
       </div>
     </div>
   );

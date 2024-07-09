@@ -5,13 +5,13 @@ import Button from "../components/Button";
 
 const DiscoverNFT = () => {
   return (
-    <div className="flex flex-col xl:flex-row justify-between flex-wrap gap-4 min-h-fit">
+    <div className="w-full flex flex-col xl:flex-row justify-between flex-wrap gap-4 min-h-fit">
       {/* first part */}
       <div
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        className="flex flex-col justify-between p-6 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
+        className="w-full flex flex-col justify-between p-6 bg-no-repeat bg-center bg-cover bg-origin-padding bg-clip-padding rounded-2xl overflow-hidden flex-1 relative z-30"
       >
         <div className="h-full w-full bg-purp absolute opacity-50 top-0 left-0 z-0"></div>
         <div className="z-10">
@@ -27,15 +27,15 @@ const DiscoverNFT = () => {
           Digital marketplace for crypto collectibles and non fungable tokens
         </p>
 
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-wrap">
           <Button text="Explore" styles="bg-purp z-30" />
           <Button text="Create" styles="bg-laal z-30" />
         </div>
       </div>
 
       {/* second part  */}
-      <div className="flex-1 h-fit grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-[2fr,3fr] lg:grid-rows-1 p-5 bg-bg-comp rounded-3xl gap-4">
-        <div className="flex-1 h-full rounded-3xl overflow-hidden bg-no-repeat bg-center bg-cover">
+      <div className="w-full flex-1 h-fit grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-[2fr,3fr] lg:grid-rows-1 p-5 bg-bg-comp rounded-3xl gap-4">
+        <div className="flex-1 w-full h-full rounded-3xl overflow-hidden bg-no-repeat bg-center bg-cover">
           <img className="object-cover w-full h-full" src={nft} alt="" />
         </div>
 
@@ -64,7 +64,7 @@ const DiscoverNFT = () => {
               <p className="text-f-16px text-light">0.15 ETH</p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
               <Button text="Place a Bid" styles="bg-purp flex-1" />
               <Button text="Details" styles="bg-laal flex-1" />
             </div>
