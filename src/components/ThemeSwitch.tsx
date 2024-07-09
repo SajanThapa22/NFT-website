@@ -60,42 +60,51 @@ const ThemeSwitch = () => {
   });
 
   return (
-    <div>
-      <div onClick={handleClick} className="relative">
-        <div>
-          {theme === "dark" && <Moon className="w-6 h-6 text-txt-clr" />}
-          {theme === "light" && <Sun className="w-6 h-6 text-txt-clr" />}
-          {theme === "system" && <System className="w-6 h-6 text-txt-clr" />}
-        </div>
-        <ul
-          className={`absolute bottom-0 bg-bg-dd overflow-hidden z-40 rounded-xl right-1/2 translate-x-1/2 translate-y-36 text-nowrap text-sm ${
-            isClicked ? "h-fit" : "h-0 overflow-hidden"
-          }`}
-        >
-          {modes.map((m) => (
-            <li
-              onClick={() => {
-                setTheme(m.text);
-              }}
-              className={`flex items-center gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
-            >
-              <m.icon
-                className={`w-6 h-6 ${
-                  m.text === theme ? "text-blue-400" : "text-txt-clr"
-                }`}
-              />
-              <p
-                className={`font-medium text-xl ${
-                  m.text === theme ? "text-blue-400" : "text-txt-clr"
-                }`}
+    <>
+      <div
+        onClick={handleClick}
+        className={`z-50 fixed left-0 top-0 bg-transparent w-screen h-dvh ${
+          isClicked ? "visible" : "hidden"
+        }`}
+      ></div>
+      <div>
+        <div onClick={handleClick} className="relative z-[100]">
+          <div>
+            {theme === "dark" && <Moon className="w-6 h-6 text-txt-clr" />}
+            {theme === "light" && <Sun className="w-6 h-6 text-txt-clr" />}
+            {theme === "system" && <System className="w-6 h-6 text-txt-clr" />}
+          </div>
+
+          <ul
+            className={`absolute bottom-0 bg-bg-dd overflow-hidden z-[100] rounded-xl right-1/2 translate-x-1/2 translate-y-36 text-nowrap text-sm ${
+              isClicked ? "h-fit" : "h-0 overflow-hidden"
+            }`}
+          >
+            {modes.map((m) => (
+              <li
+                onClick={() => {
+                  setTheme(m.text);
+                }}
+                className={`flex items-center gap-3 cursor-pointer pl-5 pr-8 py-2 w-full hover:bg-slate-200`}
               >
-                {m.text}
-              </p>
-            </li>
-          ))}
-        </ul>
+                <m.icon
+                  className={`w-6 h-6 ${
+                    m.text === theme ? "text-blue-400" : "text-txt-clr"
+                  }`}
+                />
+                <p
+                  className={`font-medium text-xl ${
+                    m.text === theme ? "text-blue-400" : "text-txt-clr"
+                  }`}
+                >
+                  {m.text}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

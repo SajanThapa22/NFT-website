@@ -5,7 +5,7 @@ import ActiveBids from "../sections/ActiveBids";
 
 const Bids = () => {
   return (
-    <div>
+    <div className="w-full">
       <WelomeTitle pageTitle="Bids" titleBelow="Bids" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-[50px]">
@@ -16,6 +16,7 @@ const Bids = () => {
         <MetricsCard styles="bg-hariyo" text="Auction" amount="82K">
           <Artwork />
         </MetricsCard>
+
         <MetricsCard styles="bg-[#F9D62C]" text="Creators" amount="200">
           <Artwork />
         </MetricsCard>

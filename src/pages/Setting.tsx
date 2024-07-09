@@ -4,7 +4,7 @@ import WelomeTitle from "../components/WelomeTitle";
 
 const Setting = () => {
   return (
-    <div className="text-txt-clr">
+    <div className="text-txt-clr w-full">
       <WelomeTitle pageTitle="setting" titleBelow="setting" />
 
       <div className="flex text-sm text-txt-clr gap-x-5 gap-y-2 flex-wrap">
