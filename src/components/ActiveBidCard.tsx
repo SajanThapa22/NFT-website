@@ -34,7 +34,9 @@ const ActiveBidCard = () => {
       </div>
 
       <div>
-        <p className="capitalize text-txt-clr text-sm">2 Hours 1 min 30s</p>
+        <p className="capitalize text-txt-clr text-sm ml-10 lg:ml-0">
+          2 Hours 1 min 30s
+        </p>
       </div>
 
       <div className="justify-self-center">

@@ -12,8 +12,6 @@ const Home = () => {
       <TrendingMetrics />
       <RAandTC />
       <ActiveBids />
-
-      <div className="h-6"></div>
     </div>
   );
 };
