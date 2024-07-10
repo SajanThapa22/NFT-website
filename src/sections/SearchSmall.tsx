@@ -1,21 +1,19 @@
 import Search from "../assets/svgs/search.svg?react";
-import Sun from "../assets/svgs/sun.svg?react";
 import Notification from "../assets/svgs/notification.svg?react";
 
 import avatar from "../assets/images/avatar.png";
 import logo from "../assets/images/Logo.png";
 import ThemeSwitch from "../components/ThemeSwitch";
+import { NavLink } from "react-router-dom";
 
 const SearchSmall = () => {
   return (
     <div className="flex w-full justify-between gap-5">
       <div className="flex items-center gap-5">
         <div>
-          <img
-            className="w-12 aspect-square rounded-xl"
-            src={logo}
-            alt="logo"
-          />
+          <NavLink to="/">
+            <img className="w-8 aspect-square" src={logo} alt="logo" />
+          </NavLink>
         </div>
 
         <div className="py-2 px-4 w-full items-center flex gap-3 bg-bg-comp rounded-xl">

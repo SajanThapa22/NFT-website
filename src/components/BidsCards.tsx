@@ -1,13 +1,16 @@
-import nft from "../assets/images/NFT.png";
 import Button from "./Button";
 
-const BidCards = () => {
+interface Props {
+  img: string;
+}
+
+const BidCards = ({ img }: Props) => {
   return (
     <div className="flex flex-col p-5 gap-5 bg-bg-comp rounded-3xl">
-      <div className="w-full rounded-2xl overflow-hidden">
+      <div className="w-full aspect-[5/4] rounded-2xl overflow-hidden">
         <img
-          className="w-full hover:scale-110 transition-all duration-300"
-          src={nft}
+          className="size-full object-cover hover:scale-110 transition-all duration-300"
+          src={img}
           alt=""
         />
       </div>

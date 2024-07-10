@@ -31,7 +31,9 @@ const NavBar = () => {
   return (
     <div className="flex flex-col sticky top-0 gap-14 w-fit h-dvh items-center pt-8 pb-20 bg-bg-comp px-6 py-5">
       <div>
-        <img className="w-8 aspect-square" src={logo} alt="logo" />
+        <NavLink to="/">
+          <img className="w-8 aspect-square" src={logo} alt="logo" />
+        </NavLink>
       </div>
       <div className="flex flex-col items-center w-fit gap-12">
         {routes.map((route, index) => {
