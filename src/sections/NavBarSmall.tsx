@@ -22,7 +22,7 @@ const routes = [
 const NavBarSmall = () => {
   return (
     <>
-      <div className="flex fixed bottom-0 z-10 w-full items-center justify-evenly bg-bg-comp px-6 py-5">
+      <div className="flex fixed bottom-0 z-10 w-full items-center justify-evenly bg-bg-comp py-5">
         {routes.map((route, index) => {
           const Icon = route.icon;
           return (

@@ -14,9 +14,9 @@ const WelomeTitle = ({ pageTitle, titleBelow }: Props) => {
       <div className="text-sm 2xl:text-[22px] w-full flex items-center justify-between">
         <p>{`Welcome ${titleBelow} Page`}</p>
         <div className="flex gap-[10px] items-center">
-          <p>home</p>
-          <Chevron className="text-txt-clr" />
-          <p>{titleBelow}</p>
+          <p className="text-[#6C7AA0]">home</p>
+          <Chevron className="text-[#65646A] dark:text-white" />
+          <p className="text-[#6C7AA0]">{titleBelow}</p>
         </div>
       </div>
     </div>
