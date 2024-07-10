@@ -10,7 +10,7 @@ const TrendingMetrics = () => {
       <h1 className="text-xl text-txt-clr capitalize font-semibold">
         trending bids
       </h1>
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-[2fr,3fr,2fr]">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-[2fr,3fr,2fr]">
         <div className="flex flex-col gap-4 2xl:gap-8">
           <MetricsCard
             styles="bg-purp"

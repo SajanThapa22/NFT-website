@@ -5,17 +5,26 @@ import Collection from "../assets/svgs/collection.svg?react";
 import Profile from "../assets/svgs/profile.svg?react";
 import Setting from "../assets/svgs/setting.svg?react";
 import Signout from "../assets/svgs/signout.svg?react";
+import ProfileIcon from "../assets/svgs/ProfileIcon";
 
 import logo from "../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
+import {
+  BidsIcon,
+  CollectionIcon,
+  HeartIcon,
+  HomeIcon,
+  profileIcon,
+  SettingIcon,
+} from "../assets/svgs/NavIcons";
 
-const icons = [
-  { id: 1, icon: Dashboard, route: "/" },
-  { id: 2, icon: Bid, route: "bids" },
-  { id: 3, icon: Heart, route: "saved" },
-  { id: 4, icon: Collection, route: "collection" },
-  { id: 5, icon: Profile, route: "profile" },
-  { id: 6, icon: Setting, route: "setting" },
+const routes = [
+  { id: 1, icon: HomeIcon, path: "/" },
+  { id: 2, icon: BidsIcon, path: "/bids" },
+  { id: 3, icon: HeartIcon, path: "/saved" },
+  { id: 4, icon: CollectionIcon, path: "/collection" },
+  { id: 5, icon: profileIcon, path: "/profile" },
+  { id: 6, icon: SettingIcon, path: "/setting" },
 ];
 
 const NavBar = () => {
@@ -25,16 +34,24 @@ const NavBar = () => {
         <img className="w-8 aspect-square" src={logo} alt="logo" />
       </div>
       <div className="flex flex-col items-center w-fit gap-12">
-        {icons.map((i) => (
-          <NavLink to={i.route}>
-            <i.icon
-              key={i.id}
-              className="text-gray-500 hover:text-purp w-6 aspect-square cursor-pointer"
-            />
-          </NavLink>
-        ))}
+        {routes.map((route, index) => {
+          const Icon = route.icon;
+          return (
+            <NavLink
+              key={index}
+              to={route.path}
+              className={({ isActive }) =>
+                `nav-icon ${isActive ? "text-purp" : "text-gray-500"}`
+              }
+            >
+              <Icon className="w-6 h-6 hover:text-purp" />
+            </NavLink>
+          );
+        })}
       </div>
-      <Signout className="text-gray-400 justify-self-end hover:text-purp w-6 aspect-square mt-[50px]" />
+      <div className="w-6 h-6">
+        <Signout className="text-gray-400 justify-self-end hover:text-purp w-full h-full mt-[50px]" />
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const DiscoverNFT = () => {
       </div>
 
       {/* second part  */}
-      <div className="w-full flex-1 h-fit grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-[2fr,3fr] lg:grid-rows-1 p-5 bg-bg-comp rounded-3xl gap-4">
+      <div className="w-full flex-1 h-fit grid grid-rows-[1sfr,auto] md:grid-cols-2 md:grid-rows-1 lg:grid-cols-[2fr,3fr] lg:grid-rows-1 p-5 bg-bg-comp rounded-3xl gap-4">
         <div className="flex-1 w-full h-full rounded-3xl overflow-hidden bg-no-repeat bg-center bg-cover">
           <img className="object-cover w-full h-full" src={nft} alt="" />
         </div>
@@ -48,23 +48,23 @@ const DiscoverNFT = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-1 justify-between h-full">
+          <div className="flex flex-col gap-2 md:justify-between h-full">
             <div>
               <p className="text-lg text-txt-clr font-semibold">Birghten LQ</p>
             </div>
-            <div className="flex gap-2 justify-between items-center">
+            <div className="flex gap-2 md:justify-between items-center">
               <p className="text-txt-clr text-sm">Auction time</p>
               <div className="flex gap-2 items center">
                 <p className="text-txt-clr text-sm">Current Bid :</p>
                 <p className="text-purp text-sm">0.05 ETH</p>
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex md:justify-between gap-5">
               <p className="text-f-16px text-light">3h 1m 50s</p>
               <p className="text-f-16px text-light">0.15 ETH</p>
             </div>
 
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-4 flex-wrap lg:flex-nowrap">
               <Button text="Place a Bid" styles="bg-purp flex-1" />
               <Button text="Details" styles="bg-laal flex-1" />
             </div>
