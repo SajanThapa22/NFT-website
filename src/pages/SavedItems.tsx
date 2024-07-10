@@ -1,8 +1,6 @@
-import React from "react";
 import WelomeTitle from "../components/WelomeTitle";
 import BidCards from "../components/BidsCards";
 import monke from "../assets/images/monke.jpeg";
-import nft from "../assets/images/NFT.png";
 
 const SavedItems = () => {
   return (
