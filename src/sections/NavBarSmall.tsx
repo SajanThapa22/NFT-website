@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   BidsIcon,
   CollectionIcon,
@@ -20,6 +21,11 @@ const routes = [
 ];
 
 const NavBarSmall = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
   return (
     <>
       <div className="flex fixed bottom-0 z-10 w-full items-center justify-evenly bg-bg-comp py-5">
@@ -33,11 +39,15 @@ const NavBarSmall = () => {
                 `nav-icon ${isActive ? "text-purp" : "text-gray-500"}`
               }
             >
-              <Icon className="w-6 h-6 hover:text-purp" />
+              <Icon
+                className={`hover:text-purp ${
+                  width < 350 ? "w-5 h-5" : "w-6 h-6"
+                }`}
+              />
             </NavLink>
           );
         })}
-        <div className="w-6 h-6">
+        <div className={` ${width < 350 ? "w-5 h-5" : "w-6 h-6"}`}>
           <Signout className="text-gray-400 hover:text-purp w-full h-full" />
         </div>
       </div>
