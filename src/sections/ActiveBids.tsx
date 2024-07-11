@@ -5,7 +5,7 @@ import "../css/scrollbar.css";
 const ActiveBids = () => {
   return (
     <div className="w-full flex flex-col gap-[50px] text-nowrap">
-      <div className="flex justify-between items-center overflow-hidden">
+      <div className="flex flex-wrap gap-x-7 gap-y-4 justify-between items-center  overflow-hidden">
         <p className="font-semibold text-[24px] capitalize text-txt-clr">
           Active Bids
         </p>
