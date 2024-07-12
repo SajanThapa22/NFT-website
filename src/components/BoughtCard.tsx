@@ -14,7 +14,7 @@ const BoughtCard = () => {
         </div>
         <img
           src={avatar}
-          className="z-50 size-[70px] lg:size-[47px] rounded-full border-[3px] border-[#fff] absolute bottom-0 translate-y-1/2 right-[50px] md:right-[40px]"
+          className="size-[70px] lg:size-[47px] rounded-full border-[3px] border-[#fff] absolute bottom-0 translate-y-1/2 right-[50px] md:right-[40px]"
           alt=""
         />
       </div>
