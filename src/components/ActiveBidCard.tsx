@@ -16,7 +16,7 @@ const ActiveBidCard = () => {
           <p className="text-txt-clr text-[16px] font-semibold capitalize">
             cute cube cool
           </p>
-          <p className="text-txt-clr text-sm capitalize">John Abhraham</p>
+          <p className="text-txt-clr text-sm capitalize">Sajan Thapa</p>
         </div>
       </div>
 
