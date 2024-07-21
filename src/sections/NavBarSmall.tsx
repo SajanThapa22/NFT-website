@@ -34,7 +34,7 @@ const NavBarSmall = () => {
           return (
             <NavLink
               key={index}
-              to={route.path}
+              to={`${route.path}`}
               className={({ isActive }) =>
                 `nav-icon ${isActive ? "text-purp" : "text-gray-500"}`
               }

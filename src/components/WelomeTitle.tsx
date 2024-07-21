@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Chevron from "../assets/svgs/chevron.svg?react";
 
 interface Props {
