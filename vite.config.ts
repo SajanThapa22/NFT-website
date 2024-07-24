@@ -4,6 +4,6 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/nft-website/",
+  base: "/nft-website/",
   plugins: [react(), svgr()],
 });
